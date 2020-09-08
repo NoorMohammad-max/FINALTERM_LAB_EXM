@@ -7,32 +7,28 @@
 
 	<h1>Welcome home!</h1>
 
-
-	<h2>EMPLOYEE list</h2>
-
 	<table border="1">
 		<tr>
-			<td>EMPLOYER ID</td>
-			<td>EMPLOYER NAME</td>
-			<td>CONTACT NO</td>
-			<td>USER NAME</td>
-			<td>PASSWORD<td>
+			<td>EMPLOYEE ID</td>
+			<td>COMPANY NAME</td>
+			<td>JOB TITLE</td>
+			<td>JOB LOCATION</td>
+			<td>SALARY<td>
 			<td>Action</td>
 		</tr>
 
 	
 		<tr>
 			<td>{{$users[$i]['id']}}</td>
-			<td>{{$users[$i]['name']}}</td>
-			<td>{{$users[$i]['contact']}}</td>
-			<td>{{$users[$i]['uname']}}</td>
-			<td>{{$users[$i]['password']}}</td>
+			<td>{{$users[$i]['cname']}}</td>
+			<td>{{$users[$i]['jtitle']}}</td>
+			<td>{{$users[$i]['jlocation']}}</td>
+			<td>{{$users[$i]['salary']}}</td>
 
 			<td>
 			    <a href="/home/update/{{$users[$i]['id']}}">Update</a> |
 				<a href="/home/delete/{{$users[$i]['id']}}">Delete</a> |
-				<a href="/home/search/{{$users[$i]['id']}}">Search</a> |
-
+			
 			</td>
 		</tr>
 
